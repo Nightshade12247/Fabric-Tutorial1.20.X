@@ -2,6 +2,7 @@ package net.gaspard.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.gaspard.tutorialmod.block.ModBlocks;
 import net.gaspard.tutorialmod.item.ModItemGroups;
 import net.gaspard.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 	}
